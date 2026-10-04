@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TaskManager — ваш личный менеджер задач">
+  <title>Ani-forum</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.svg">
+</head>
+<body>
+  <header class="nav">
+    <h1>Ani-forum</h1> 
+    <nav class="menu"> 
+      <a href="#add">Зарегестрироваться</a>
+      <a href="#comm">Популярные отзывы</a>
+      <a href="#user">Активные пользователи</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+        <h2>Ani-forum &mdash; </h2>
+        <p>самое уютное место для обсуждения и критики японской мультипликации</p>
+    </section>
+
+
+<section class="layout">
+      <div class="layout-text">
+        <h2>Почему Ani-forum?</h2>
+        <p>Мы собрали здесь тех, кто ценит уют и живые дискуссии. Наш главный принцип — место, куда хочется возвращаться: всё по полочкам, никакой токсичности, и всё это работает быстро даже с телефона.</p>
+      </div>
+      <aside class="sidebar">
+        <p>«Аниме — это не просто картинки, это способ найти друзей». Каждую тему мы строим как конструктор: обзоры, арты, обсуждения и мемы — всё находится там, где нужно.</p>
+      </aside>
+</section>
+
+    <section class="comm" id="comm">
+      <h2>Популярные отзывы</h2>
+      <article class="card">
+        <span class="badge">NEW</span>
+        <h3>Qutia0</h3>  
+        <p>Аниме "Магическая битва" идеальный пример того как можно прекрасно начать произведение и так обесценить всё в конце, это действительно огорчает!</p>
+        <label class="fav">
+           <input type="checkbox">
+           <span></span>
+        </label>
+      </article>
+      <article class="card">
+        <h3>SAnny_Day1</h3>
+        <p>История Аквы и Руди в "Звездное дитя" очень грустная и трогательная. Особенно когда речь заходит о Ай, она действительно прекрасный персонаж, которого судять так поверхностно.</p>
+        <label class="fav">
+           <input type="checkbox">
+           <span></span>
+        </label>
+      </article>
+      <article class="card">
+        <h3>Sintia89</h3>
+        <p>Мне очень понравилось аниме "Хоть я и бездарная злодейка." Оно чем-то похоже на "Монолог Формацефта", но есть в ней какая-то изюменка, которой нет в большинстве аниме!</p>
+      <label class="fav">
+           <input type="checkbox">
+           <span></span>
+        </label>
+      </article>
+      <article class="card">
+        <h3>Anifan228</h3>
+        <p>Почему "Играй Эуфониум" такое непопулярное аниме? Даже если это повседневность в ней поднимаются серьезные и интересные темы.</p> 
+        <label class="fav">
+           <input type="checkbox">
+           <span></span>
+        </label>
+      </article>
+      <article class="card">
+        <h3>Honaka_best_girl_forever</h3>
+        <p>Люди любящие франшизу "Love live" существуют? Сейчас в медиа так мало контента по такой классике связанной с девочками айдолами</p>
+      <label class="fav">
+           <input type="checkbox">
+           <span></span>
+        </label>
+      </article>
+      <article class="card">
+        <span class="badge">NEW</span>
+        <h3>Suenna_la</h3>
+        <p>Аниме "Blue lock" слишком переоценинно. Концепция - это не что-то новое и необычное, поэтому я вообще не понимаю откуда у него есть столько фанатов?</p>
+      <label class="fav">
+           <input type="checkbox">
+           <span></span>
+        </label>
+      </article>
+    </section>
+
+    <section class="user" id="user">
+      <h2>Активные пользователи</h2>
+    <div class="grid-team">
+
+        <div class="member">
+          <div class="avatar">Q</div>
+          <h3>Qutia0</h3>
+          <p class="muted">+30 отзывов</p>
+          <p class="muted">10 рецензий</p>
+       </div>
+    
+
+        <div class="member">
+          <div class="avatar">A</div>
+          <h3>Anifan228</h3>
+          <p class="muted">+30 отзывов</p>
+          <p class="muted">30 рецензий</p>
+        </div>
+
+        <div class="member">
+          <div class="avatar">S</div>
+          <h3>Suenna_la</h3>
+          <p class="muted">+40 отзывов</p>
+          <p class="muted">20 рецензий</p>
+        </div>
+
+        <div class="member">
+          <div class="avatar">H</div>
+          <h3>Hur_moria</h3>
+          <p class="muted">+50 отзывов</p>
+          <p class="muted">25 рецензий</p>
+        </div>
+
+    </div>
+    </section>
+        
+    <section class="reg" id="add">
+      <h2>Регистрация</h2>
+      <form action="#" method="get">
+ 
+          <label for="text">Имя:</label>
+          <input type="text" id="text" name="text" placeholder="Введите имя" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Введите почту" required>
+
+          <label for="date">Дата рождения:</label>
+          <input type="date" id="date" name="date">
+
+          <p><button type="submit" class="btn">Продолжить</button></p>
+          <p><button type="reset">Очистить</button></p>
+
+      </form>
+    </section>
+ 
+    <button class="theme-toggle" onclick="document.body.classList.toggle('dark')">Тема</button>
+  <footer>
+    <p>&copy; 2026, Шатрова Софья <a href="mailto:shatrovasofia1@gmail.com">shatrovasofia1@gmail.com</a></p>
+  </footer>
+  <a href="#" class="scroll-top">↑</a>
+</body>
+</html>
+
